@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>French Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-world="galaxie" data-screen="intro">
+  <div class="background-stage" aria-hidden="true">
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="grid-glow"></div>
+    <div id="particles" class="particles"></div>
+  </div>
+
+  <main id="app" class="app-shell"></main>
+
+  <section id="intro" class="intro-screen is-visible" aria-label="French Quest intro">
+    <div class="intro-orbit" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="intro-logo">
+      <p class="eyebrow">Grammar adventure</p>
+      <h1>French Quest</h1>
+      <div class="intro-stars" aria-hidden="true">
+        <i></i><i></i><i></i>
+      </div>
+      <button id="introSkip" class="primary-button large-button" type="button">Enter Quest</button>
+    </div>
+  </section>
+
+  <div id="modalRoot" class="modal-root" aria-live="polite"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+  <div id="confettiRoot" class="confetti-root" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
